@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+.insta-corpo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+#phone-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#phone-left img{
+    height: 680px;
+}
+.continue{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    flex-direction: column;
+    width: 400px;
+    min-height: 544px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20.8px 0;
+    border: 1px solid lightgray;
+}
+.container:nth-child(1){
+    height: 300px;
+}
+#logo{
+    width: 175px;
+}
+#foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#foto-perfil img{
+    width: 85px;
+}
+#instagram-login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+#instagram-logout{
+    color: #0095f6;
+    margin-top: 16px;
+}
+#not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20.8px 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+}
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .insta-corpo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    #phone-left {
+        width: 90%;
+    }
+
+    #phone-left {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+    
+    .container {
+        border: 1px solid transparent;
+    }
+}
+
